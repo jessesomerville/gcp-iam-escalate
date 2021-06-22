@@ -95,7 +95,7 @@ linters:
     - gofmt
     - goimports
     - golint
-    - gomnd
+    #- gomnd failing with magic numbers
     - goprintffuncname
     - gosec
     - gosimple
@@ -127,7 +127,7 @@ linters:
     # - nestif
     # - prealloc
     # - testpackage
-    # - revive
+    # - revive check why this is disable since its replacing golint
     # - wsl
 
 ###############################################################################

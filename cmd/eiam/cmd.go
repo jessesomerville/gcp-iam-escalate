@@ -47,7 +47,7 @@ func NewEphemeralIamCommand() (*eiam.RootCommand, error) {
 			│                                                            │
 			│                   Start privileged session                 │
 			│  ──────────────────────────────────────────────────────    │
-			│  $ eiam assumePrivileges \                                 │
+			│  $ eiam assume-privileges \                                │
 			│      -s example-svc@my-project.iam.gserviceaccount.com \   │
 			│      --reason "Emergency security patch (JIRA-1234)"       │
 			│                                                            │

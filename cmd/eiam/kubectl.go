@@ -102,7 +102,7 @@ func runKubectlCommand() error {
 	}
 
 	util.Logger.Infof("Running: [kubectl %s]\n\n", strings.Join(kubectlCmdArgs, " "))
-	kubectlAuth := append(kubectlCmdArgs, "--token", accessToken.GetAccessToken())
+	kubectlAuth := append([]string{"--token", accessToken.GetAccessToken()}, kubectlCmdArgs...)
 	kubectl := viper.GetString("binarypaths.kubectl")
 	c := exec.Command(kubectl, kubectlAuth...)
 	c.Stdout = os.Stdout
